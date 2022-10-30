@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title +" | "+ logo %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>  
+      <nav >
+        <div id="logo">
+          <a href="/"><%= logo %></a>
+        </div>        
+        <div id="nav-links">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>    
+      <p>slay to <%= title %></p>
+      <form action="/accounts/signup" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password">
+        <input type="submit" value="SignUp">
+      </form>       
+    </main>
+    <footer></footer>
+  </body>
+</html>
